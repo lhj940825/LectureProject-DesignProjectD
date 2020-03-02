@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HealthCareServiceProjectD</string>
+    <string name="paired">paired</string>
+    <string name="select_device">Select a device</string>
+    <string name="scan">Scan</string>
+    <string name="scanning">Scanning for devices...</string>
+    <string name="ble_not_supported">Bluetooth Low Energy not supported</string>
+    <string name="cancel">Cancel</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <!-- Location Detector String Set -->
+    <string name="dialog_marker_value1">Home</string>
+    <string name="dialog_marker_value2">Office</string>
+    <string name="dialog_marker_value3">Yard</string>
+    <string name="dialog_marker_value4">Gym</string>
+    <string name="dialog_marker_value5">Mall</string>
+    <string name="dialog_marker_value6">Restaurant</string>
+    <string name="dialog_marker_value7">Outdoors</string>
+    <string name="dialog_marker_value8">Transport</string>
+    <string name="dialog_marker_value98">Unidentified Location</string>
+    <string name="dialog_marker_value99">No Location</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

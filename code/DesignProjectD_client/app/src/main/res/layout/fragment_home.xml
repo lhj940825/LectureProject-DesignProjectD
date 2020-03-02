@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/Mass_of_Water_Icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/water" />
+
+        <ImageView
+            android:id="@+id/Scale_Meter_Icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/scale" />
+
+        <ImageView
+            android:id="@+id/Blood_Glucose_Meter_Icon"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/blood_glucose" />
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Mass_of_Water"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Blood_Glucose"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0ML" />
+
+        <TextView
+            android:id="@+id/Scale_Weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Unknown"
+            />
+
+        <TextView
+            android:id="@+id/Blood_Glucose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Unknown"
+            />
+    </TableRow>
+
+    <TableRow>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/Recent_Health_Info_Chart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="250dp" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Health_Notification"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="15pt"
+            android:text="Dehydration!, Please drink more water" />
+    </TableRow>
+</TableLayout>

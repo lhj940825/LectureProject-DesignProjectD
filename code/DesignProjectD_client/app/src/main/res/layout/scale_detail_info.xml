@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/Weight_Icon"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/scale" />
+
+        <ImageView
+            android:id="@+id/Bone_Icon"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/bone" />
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Blood_Glucose"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Unknown" />
+
+        <TextView
+            android:id="@+id/Bone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Unknown"
+            />
+
+
+    </TableRow>
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/Fat_Icon"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/fat" />
+
+        <ImageView
+            android:id="@+id/Muscle_Icon"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/muscle" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/Fat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Blood_Glucose"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Unknown" />
+
+        <TextView
+            android:id="@+id/Muscle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Unknown"
+            />
+
+
+    </TableRow>
+    <TableRow>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/Recent_Weight_Info_Chart"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_weight="1" />
+    </TableRow>
+</TableLayout>
